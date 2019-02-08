@@ -10,8 +10,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show::lowest_rating
-    show = Show.where("rating=?", self.minimum("rating")
-    show.first
+    Show.minimum("rating")
   end
 
 end
